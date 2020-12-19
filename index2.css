@@ -1,0 +1,108 @@
+@font-face {
+    font-family : Vazir;
+    src : url('./fonts.css/Vazir-Bold.eot');
+    src : url('./fonts.css/Vazir-Bold.woff2'),
+          url('./fonts.css/Vazir-Bold.woff'),
+          url('./fonts.css/Vazir-Bold.ttf');
+          font-weight : bold;
+}
+body {
+    direction: rtl;
+    font-family : Vazir;
+    background: #fc00ff;
+background: linear-gradient(to right, #00dbde, #fc00ff);
+}
+.style-heading {
+    color: white;
+}
+.content-style {
+    display: block;
+    margin: auto; 
+    width : 50%; 
+}
+.label-style,.input-style {
+    display : block;
+}
+.style-checkbox {
+    display : inline-block;
+    margin : .5rem 0 .5rem 0;
+}
+.input-style {
+    padding-right : 1rem;
+    border-radius : 50px 50px 50px 50px;
+    width : 50%;
+    border : none;
+    height : 1.5rem;
+}
+.input-style:focus {
+    width : 100%;
+    transition : width .8s ease-in-out;
+    outline:none;
+    height : 2rem;
+    color : white;
+    background-color : #8f038f;
+}
+.label-style {
+    color : white;
+    padding: .5rem 0 .5rem 0;
+}
+.label-select {
+    color : white;
+    padding : .5rem 0 .5rem .5rem; 
+}
+.select-box {
+    margin : .5rem 0 .5rem 0; 
+    padding: 0.1rem 2rem .1rem 2rem;
+    font-family: Vazir;
+}
+.select-box {
+    color :#b4b2b2;
+}
+.select-box:focus {
+    background-color: #8f038f;
+}
+.button-style {
+    display : block;
+    font-family : Vazir;
+   color:#b4b2b2 ;
+background-color: white;
+padding: .5rem 1rem .5rem 1rem;
+border : none;
+}
+.button-style:hover {
+    color : white;
+    background-color : #00dbde;
+}
+.display-checkbox {
+    display : none;
+}
+.checkbox {
+    position : relative;
+    padding-right : 2.1rem;
+    padding-top : .4rem;
+}
+.checkmark {
+    width : 25px;
+    height : 25px;
+    background-color : #eee;
+    position : absolute;
+    right:0;
+}
+.checkbox input:checked ~ .checkmark {
+    background-color : #00dbde;
+}
+.checkmark::after {
+    content:"";
+    width : 5px;
+    height : 10px;
+    border : solid white;
+    border-width : 0 3px 3px 0;
+    position : absolute;
+    top:5px;
+    right:8px;
+    transform : rotate(45deg);
+    display : none;
+}
+.checkbox input:checked ~ .checkmark::after {
+    display : block;
+}
